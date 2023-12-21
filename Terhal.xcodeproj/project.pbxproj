@@ -12,6 +12,7 @@
 		A56700342B31C22B008EBC50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56700332B31C22B008EBC50 /* Preview Assets.xcassets */; };
 		A56700412B330E86008EBC50 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56700402B330E86008EBC50 /* MainScreen.swift */; };
 		A56700432B330EEF008EBC50 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A56700422B330EEF008EBC50 /* Localizable.xcstrings */; };
+		A56D9E402B34CDE300AAAF20 /* ksaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D9E3F2B34CDE300AAAF20 /* ksaView.swift */; };
 		A5B73DE32B34B1D9006E0639 /* mapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B73DE22B34B1D9006E0639 /* mapView.swift */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +23,8 @@
 		A56700332B31C22B008EBC50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A56700402B330E86008EBC50 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainScreen.swift; path = ../MainScreen.swift; sourceTree = "<group>"; };
 		A56700422B330EEF008EBC50 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		A56D9E3F2B34CDE300AAAF20 /* ksaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ksaView.swift; sourceTree = "<group>"; };
+		A56D9E412B34D3B600AAAF20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A5B73DE22B34B1D9006E0639 /* mapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,9 +59,11 @@
 		A567002B2B31C22A008EBC50 /* Terhal */ = {
 			isa = PBXGroup;
 			children = (
+				A56D9E412B34D3B600AAAF20 /* Info.plist */,
 				A567002C2B31C22A008EBC50 /* TerhalApp.swift */,
 				A56700402B330E86008EBC50 /* MainScreen.swift */,
 				A5B73DE22B34B1D9006E0639 /* mapView.swift */,
+				A56D9E3F2B34CDE300AAAF20 /* ksaView.swift */,
 				A56700302B31C22B008EBC50 /* Assets.xcassets */,
 				A56700322B31C22B008EBC50 /* Preview Content */,
 			);
@@ -147,6 +152,7 @@
 			files = (
 				A56700412B330E86008EBC50 /* MainScreen.swift in Sources */,
 				A567002D2B31C22A008EBC50 /* TerhalApp.swift in Sources */,
+				A56D9E402B34CDE300AAAF20 /* ksaView.swift in Sources */,
 				A5B73DE32B34B1D9006E0639 /* mapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +289,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Terhal/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Terhal/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show it on the map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -311,6 +319,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Terhal/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Terhal/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show it on the map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

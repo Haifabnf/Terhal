@@ -2,6 +2,27 @@
   "sourceLanguage" : "en",
   "strings" : {
     "" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " "
+          }
+        }
+      }
+    },
+    "📞 Emergencies" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📞 الطوارئ"
+          }
+        }
+      }
+    },
+    "911" : {
 
     },
     "a girl traveling illustration" : {
@@ -47,6 +68,17 @@
         }
       }
     },
+    "Emergency contact numbers" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جهات الاتصال الطارئة"
+          }
+        }
+      }
+    },
     "France" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -54,17 +86,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "فرنسا"
-          }
-        }
-      }
-    },
-    "Hello, World!" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "مرحباً!"
           }
         }
       }
@@ -87,6 +108,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "المملكة العربية السعودية"
+          }
+        }
+      }
+    },
+    "Map" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الخريطة"
           }
         }
       }

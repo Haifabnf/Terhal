@@ -9,7 +9,8 @@ import SwiftUI
 
 struct MainScreen: View {
     
-    @State private var showPage = false
+    @State private var ksaPage = false
+    @State private var usaPage = false
 
     var text: String = "Choose the country you’re willing to go to and look through sketchy places to avoid, you can also find emergency contact numbers."
     
@@ -50,9 +51,24 @@ struct MainScreen: View {
                             
                             //Countries:
                             
-                            NavigationLink(destination: mapView(), isActive: $showPage){
+                            NavigationLink(destination: ksaView(), isActive: $ksaPage){
                                 Button{
-                                    self.showPage = true
+                                    self.ksaPage = true
+                                }label:{
+                                    HStack{
+                                        Image("ksa")
+                                            .resizable()
+                                            .frame(width: 40, height: 40)
+                                        Text("KSA")
+                                            .font(.custom("SF Arabic Rounded", size: 17))
+                                            .frame(maxWidth: .infinity, alignment: .leading)
+                                    }
+                                }
+                                .buttonStyle(flagButton())
+                            }
+                            NavigationLink(destination: mapView(), isActive: $usaPage){
+                                Button{
+                                    self.usaPage = true
                                 }label:{
                                     HStack{
                                         Image("usa")
@@ -65,20 +81,6 @@ struct MainScreen: View {
                                 }
                                 .buttonStyle(flagButton())
                             }
-                            Button{
-                                
-                            }label:{
-                                HStack{
-                                    Image("ksa")
-                                        .resizable()
-                                        .frame(width: 40, height: 40)
-                                    Text("KSA")
-                                        .font(.custom("SF Arabic Rounded", size: 17))
-                                        .frame(maxWidth: .infinity, alignment: .leading)
-                                }
-                            }
-                            .buttonStyle(flagButton())
-                            
                             
                             
                             Button{
