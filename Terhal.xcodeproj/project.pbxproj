@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		A567002D2B31C22A008EBC50 /* TerhalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A567002C2B31C22A008EBC50 /* TerhalApp.swift */; };
-		A567002F2B31C22A008EBC50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A567002E2B31C22A008EBC50 /* ContentView.swift */; };
 		A56700312B31C22B008EBC50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56700302B31C22B008EBC50 /* Assets.xcassets */; };
 		A56700342B31C22B008EBC50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56700332B31C22B008EBC50 /* Preview Assets.xcassets */; };
+		A56700412B330E86008EBC50 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56700402B330E86008EBC50 /* MainScreen.swift */; };
+		A56700432B330EEF008EBC50 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A56700422B330EEF008EBC50 /* Localizable.xcstrings */; };
+		A5B73DE32B34B1D9006E0639 /* mapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B73DE22B34B1D9006E0639 /* mapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A56700292B31C22A008EBC50 /* Terhal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Terhal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A567002C2B31C22A008EBC50 /* TerhalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerhalApp.swift; sourceTree = "<group>"; };
-		A567002E2B31C22A008EBC50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A56700302B31C22B008EBC50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A56700332B31C22B008EBC50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A56700402B330E86008EBC50 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainScreen.swift; path = ../MainScreen.swift; sourceTree = "<group>"; };
+		A56700422B330EEF008EBC50 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		A5B73DE22B34B1D9006E0639 /* mapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 		A56700202B31C22A008EBC50 = {
 			isa = PBXGroup;
 			children = (
+				A56700422B330EEF008EBC50 /* Localizable.xcstrings */,
 				A567002B2B31C22A008EBC50 /* Terhal */,
 				A567002A2B31C22A008EBC50 /* Products */,
 			);
@@ -52,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				A567002C2B31C22A008EBC50 /* TerhalApp.swift */,
-				A567002E2B31C22A008EBC50 /* ContentView.swift */,
+				A56700402B330E86008EBC50 /* MainScreen.swift */,
+				A5B73DE22B34B1D9006E0639 /* mapView.swift */,
 				A56700302B31C22B008EBC50 /* Assets.xcassets */,
 				A56700322B31C22B008EBC50 /* Preview Content */,
 			);
@@ -109,6 +115,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = A56700202B31C22A008EBC50;
 			productRefGroup = A567002A2B31C22A008EBC50 /* Products */;
@@ -127,6 +134,7 @@
 			files = (
 				A56700342B31C22B008EBC50 /* Preview Assets.xcassets in Resources */,
 				A56700312B31C22B008EBC50 /* Assets.xcassets in Resources */,
+				A56700432B330EEF008EBC50 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A567002F2B31C22A008EBC50 /* ContentView.swift in Sources */,
+				A56700412B330E86008EBC50 /* MainScreen.swift in Sources */,
 				A567002D2B31C22A008EBC50 /* TerhalApp.swift in Sources */,
+				A5B73DE32B34B1D9006E0639 /* mapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

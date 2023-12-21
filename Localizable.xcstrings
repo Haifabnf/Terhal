@@ -1,5 +1,140 @@
 {
   "sourceLanguage" : "en",
-  "strings" : {},
+  "strings" : {
+    "" : {
+
+    },
+    "a girl traveling illustration" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رسمة لبنت تسافر"
+          }
+        }
+      }
+    },
+    "Choose a country" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختار الدولة"
+          }
+        }
+      }
+    },
+    "Choose the country you’re willing to go to and look through sketchy places to avoid, you can also find emergency contact numbers." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختار الدولة اللي ناوي تروح لها وتصفح على الاماكن الغير الآمنة بحيث انك تتجنبها، و مرفوق معها جهات الاتصال الرسمية للمساعدة في حال احتجتها."
+          }
+        }
+      }
+    },
+    "Countries" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الدول"
+          }
+        }
+      }
+    },
+    "France" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "فرنسا"
+          }
+        }
+      }
+    },
+    "Hello, World!" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مرحباً!"
+          }
+        }
+      }
+    },
+    "Italy" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ايطاليا"
+          }
+        }
+      }
+    },
+    "KSA" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المملكة العربية السعودية"
+          }
+        }
+      }
+    },
+    "Turkey" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تركيا"
+          }
+        }
+      }
+    },
+    "UAE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الامارات العربية المتحدة"
+          }
+        }
+      }
+    },
+    "UK" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المملكة المتحدة"
+          }
+        }
+      }
+    },
+    "USA" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الولايات الأمريكية المتحدة"
+          }
+        }
+      }
+    }
+  },
   "version" : "1.0"
 }
