@@ -6,7 +6,7 @@ struct SplashView: View {
     var body: some View {
         ZStack {
             // Image as the background
-            Image("terh") // Replace "yourImageName" with your image name
+            Image("terh")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .edgesIgnoringSafeArea(.all)
