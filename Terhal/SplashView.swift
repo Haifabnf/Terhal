@@ -12,10 +12,10 @@ struct SplashView: View {
                 // Image as the background
                 Image("terh")
                     .resizable()
-                    .aspectRatio(contentMode: .fill)
+                    //.aspectRatio(contentMode: .fill)
                     .edgesIgnoringSafeArea(.all)
                     .opacity(imageOpacity)
-                    .animation(.easeInOut(duration: 1.5)) // Adjust the duration as needed
+                    //.animation(.easeInOut(duration: 1.5)) // Adjust the duration as needed
                 
                 
                 
@@ -26,7 +26,6 @@ struct SplashView: View {
                     withAnimation {
                         //self.imageOpacity = 0.0
                         self.isActive = true
-                        
                     }
                 }
             }
