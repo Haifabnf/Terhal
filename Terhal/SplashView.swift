@@ -1,18 +1,34 @@
-//
-//  Splash.swift
-//  Terhal
-//
-//  Created by Taif on 06/06/1445 AH.
-//
-
 import SwiftUI
 
-struct Splash: View {
+struct SplashView: View {
+    @State private var imageOpacity: Double = 1.0
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            // Image as the background
+            Image("terh") // Replace "yourImageName" with your image name
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .edgesIgnoringSafeArea(.all)
+                .opacity(imageOpacity)
+                .animation(.easeInOut(duration: 1.5)) // Adjust the duration as needed
+            
+            
+            
+        }
+        .onAppear {
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                withAnimation {
+                    self.imageOpacity = 0.0
+                }
+            }
+        }
     }
 }
 
-#Preview {
-    Splash()
+struct SplashView_Previews: PreviewProvider {
+    static var previews: some View {
+        SplashView()
+    }
 }

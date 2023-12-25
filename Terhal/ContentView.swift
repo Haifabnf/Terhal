@@ -1,21 +1,10 @@
-//
-//  ContentView.swift
-//  Terhal
-//
-//  Created by haifa alfoiz on 19/12/2023.
-//
-
 import SwiftUI
+
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+
     }
 }
 
