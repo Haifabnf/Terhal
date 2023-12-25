@@ -78,16 +78,19 @@ struct mapView: View {
                             Map(coordinateRegion: $region)
                                 .frame(width: geometry.size.width * 0.85, height: geometry.size.height / 2.8) // Adjust the size of the map here
                                 .position(x: geometry.size.width / 2, y: geometry.size.height / 2.8)
+                                .accessibilityLabel("Map of San Jose")
+                            
                         }
                         .clipShape(RoundedRectangle(cornerRadius: 25))
                     VStack{
                         Text("Emergency contact numbers")
+                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                             .accessibilityLabel("Emergency contact numbers")
                             .font(.custom("SF Arabic Rounded", size: 25))
                             .fontWeight(.bold)
-                            .multilineTextAlignment(.leading)
-                            .padding()
-                            .position(x: geometry.size.width * 0.44, y: geometry.size.height / 1.8)
+                            //.multilineTextAlignment(.leading)
+                            //.frame(height: 850)
+                            //.position(x: geometry.size.width / 2.3, y: geometry.size.height / 1.8)
                             .padding()
                         
                         HStack (spacing: 10){
@@ -98,10 +101,8 @@ struct mapView: View {
                                 .foregroundColor(Color("10"))
                                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                         }
-                        .position(x: geometry.size.width / 1.7, y: geometry.size.height / 7.5)
-                        
-                        
                     }
+                    .position(x: geometry.size.width / 1.7, y: geometry.size.height / 1.7)
                     
                 }
             }
