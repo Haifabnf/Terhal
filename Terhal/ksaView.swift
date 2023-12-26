@@ -23,9 +23,19 @@ struct ksaView: View {
         ZStack{
             Color("60")
                 .ignoresSafeArea()
+            
             VStack{
                 
-                GeometryReader{ geometry in
+                ZStack{
+                    Rectangle()
+                        .fill(Color("10"))
+                    //.frame(width: geometry.size.width, height: geometry.size.height / 4.5)
+                    //.position(x: geometry.size.width / 2, y: geometry.size.height * 0.095)
+                        .shadow(radius: 3)
+                        .edgesIgnoringSafeArea(.all)
+                        .frame(width: 400, height: 40)
+                    //.position(x: 200, y: -50)
+                    
                     Text("")
                         .navigationBarBackButtonHidden(true)
                         .toolbar {
@@ -34,7 +44,7 @@ struct ksaView: View {
                                     dismiss()
                                 } label: {
                                     HStack {
-
+                                        
                                         Image(systemName: "chevron.backward")
                                             .foregroundColor(.white)
                                         Text("Countries")
@@ -44,96 +54,96 @@ struct ksaView: View {
                             }
                         }
                     
-                    Rectangle()
-                        .fill(Color("10"))
-                        .frame(width: geometry.size.width, height: geometry.size.height / 4.5)
-                        .position(x: geometry.size.width / 2, y: geometry.size.height * 0.06)
-                        .shadow(radius: 3)
-                        .edgesIgnoringSafeArea(.all)
-                        
+                    
                     Text("KSA")
                         .foregroundColor(.white)
                         .font(.custom("SF Arabic Rounded", size: 25))
                         .fontWeight(.bold)
-                        .position(x: geometry.size.width / 2, y: geometry.size.height * -0.03)
+                    //.position(x: 200, y: -15)
                     
-                    Text("Map")
-                        .accessibilityLabel("Map")
+                    //.position(x: geometry.size.width / 2, y: geometry.size.height * -0.04)
+                }
+                Spacer()
+            }
+            //ZStack{
+            VStack(){
+                
+                //GeometryReader{ geometry in
+                
+                
+                Text("Map")
+                    .accessibilityLabel("Map")
+                    .font(.custom("SF Arabic Rounded", size: 25))
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.leading)
+                    .padding()
+                    .padding(.trailing, 300)
+                
+                
+                Map(coordinateRegion: $region)
+                    .shadow(color: Color("shadow"), radius: 3, x: 2, y: 5)
+                    .frame(width: 350, height: 300) // Adjust the size of the map here
+                //.position(x: geometry.size.width / 2, y: geometry.size.height / 2)
+                    .onAppear{
+                        viewModel.checkIfLocationServicesIsEnabled()
+                    }
+                
+                VStack(spacing: 0){
+                    Text("Emergency contact numbers")
+                        .accessibilityLabel("Emergency contact numbers")
                         .font(.custom("SF Arabic Rounded", size: 25))
                         .fontWeight(.bold)
                         .multilineTextAlignment(.leading)
                         .padding()
-                        .position(x: geometry.size.width / 11, y: geometry.size.height / 8)
-                        .padding()
+                        .padding(.trailing)
                     
-                    
-                            Map(coordinateRegion: $region)
-                                .shadow(color: Color("shadow"), radius: 3, x: 2, y: 5)
-                                .frame(width: geometry.size.width * 0.85, height: geometry.size.height / 2.8) // Adjust the size of the map here
-                                .position(x: geometry.size.width / 2, y: geometry.size.height / 2.8)
-                                .onAppear{
-                                    viewModel.checkIfLocationServicesIsEnabled()
-                                }
-                    
-                    VStack(spacing: 10){
-                        Text("Emergency contact numbers")
-                            .accessibilityLabel("Emergency contact numbers")
-                            .font(.custom("SF Arabic Rounded", size: 25))
-                            .fontWeight(.bold)
-                            .multilineTextAlignment(.leading)
-                            .padding()
-                            .position(x: geometry.size.width * 0.44, y: geometry.size.height / 1.8)
-                            .padding()
-                        
-                        VStack(spacing: 15){
-                            HStack (spacing: 10){
-                                Text("📞 Emergencies")
-                                    .font(.custom("SF Arabic Rounded", size: 17))
-                                Spacer()
-                                Text("     911")
-                                    .font(.custom("SF Arabic Rounded", size: 17))
-                                    .foregroundColor(Color("10"))
-                                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                            }
-                            //.position(x: geometry.size.width / 1.7, y: geometry.size.height / 7.5)
-                            HStack (spacing: 10){
-                                Text("📞 Ambulance")
-                                    .font(.custom("SF Arabic Rounded", size: 17))
-                                Spacer()
-                                Text("         997")
-                                    .font(.custom("SF Arabic Rounded", size: 17))
-                                    .foregroundColor(Color("10"))
-                                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                            }
-                            
-                            HStack (spacing: 10){
-                                Text("📞 Civil Defense")
-                                    .font(.custom("SF Arabic Rounded", size: 17))
-                                Spacer()
-                                Text("      998")
-                                    .font(.custom("SF Arabic Rounded", size: 17))
-                                    .foregroundColor(Color("10"))
-                                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                            }
-                            HStack (spacing: 10){
-                                Text("📞 Kingdom Emergency (without SIM)")
-                                    .font(.custom("SF Arabic Rounded", size: 17))
-                                Spacer()
-                                Text("112")
-                                    .font(.custom("SF Arabic Rounded", size: 17))
-                                    .foregroundColor(Color("10"))
-                                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                            }
+                    VStack(spacing: 15){
+                        HStack{
+                            Text("📞 Emergencies")
+                                .font(.custom("SF Arabic Rounded", size: 17))
+                            Spacer()
+                            Text("911")
+                                .font(.custom("SF Arabic Rounded", size: 17))
+                                .foregroundColor(Color("10"))
                         }
-                        .position(x: geometry.size.width / 1.7, y: geometry.size.height / 4.8)
-                    }
                         
+                        HStack (spacing: 10){
+                            Text("📞 Ambulance")
+                                .font(.custom("SF Arabic Rounded", size: 17))
+                            Spacer()
+                            Text("997")
+                                .font(.custom("SF Arabic Rounded", size: 17))
+                                .foregroundColor(Color("10"))
+                        }
+                        
+                        HStack (spacing: 10){
+                            Text("📞 Civil Defense")
+                                .font(.custom("SF Arabic Rounded", size: 17))
+                            Spacer()
+                            Text("998")
+                                .font(.custom("SF Arabic Rounded", size: 17))
+                                .foregroundColor(Color("10"))
+                        }
+                        HStack (spacing: 10){
+                            Text("📞 Kingdom Emergency (without SIM)")
+                                .font(.custom("SF Arabic Rounded", size: 17))
+                            Spacer()
+                            Text("112")
+                                .font(.custom("SF Arabic Rounded", size: 17))
+                                .foregroundColor(Color("10"))
+                        }
+                    }
+                    .padding(.horizontal)
                 }
+                
+                
+                
             }
+            
         }
     }
+    
 }
-
 #Preview {
     ksaView()
 }

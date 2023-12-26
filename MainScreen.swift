@@ -21,8 +21,8 @@ struct MainScreen: View {
                 Color("60")
                     .ignoresSafeArea()
                 
-                VStack{
-                    GeometryReader { geometry in
+                VStack(spacing: 0){
+                    //GeometryReader { geometry in
                         Image("Image")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
@@ -30,21 +30,22 @@ struct MainScreen: View {
                             .accessibilityLabel("a girl traveling illustration")
                         
                         Text("Choose the country you’re willing to go to and look through sketchy places to avoid, you can also find emergency contact numbers.")
-                            .accessibilityLabel("Choose the country you’re willing to go to and look through sketchy places to avoid, you can also find emergency contact numbers.")
+                            //.accessibilityLabel("Choose the country you’re willing to go to and look through sketchy places to avoid, you can also find emergency contact numbers.")
                             .padding()
-                        //.font(.headline)
                             .font(.custom("SF Arabic Rounded", size: 17))
-                        //.frame(maxWidth: .infinity)
-                            .frame(height: 550)
-                        
+                    
+                    GeometryReader { geometry in
+
                         Text("Choose a country")
                             .accessibilityLabel("Choose a country")
                             .font(.custom("SF Arabic Rounded", size: 25))
                             .fontWeight(.bold)
-                            .frame(height: 650)
+                            //.frame(height: 650)
                             .multilineTextAlignment(.leading)
                             .padding()
                     }
+                    .frame(width:380, height:50)
+                    //Spacer()
                     
                     ScrollView{
                         VStack(alignment: .leading, spacing: 13){

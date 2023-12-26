@@ -18,7 +18,7 @@ struct mapView: View {
         ZStack{
             Color("60")
                 .ignoresSafeArea()
-            VStack{
+            VStack(spacing: 10){
                 
                 
                 GeometryReader{ geometry in
