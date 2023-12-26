@@ -11,6 +11,57 @@
         }
       }
     },
+    "                997" : {
+
+    },
+    "             998" : {
+
+    },
+    "            911" : {
+
+    },
+    "      911" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "911"
+          }
+        }
+      }
+    },
+    "     511" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "511"
+          }
+        }
+      }
+    },
+    "📞 Ambulance" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📞 الاسعاف"
+          }
+        }
+      }
+    },
+    "📞 Civil Defense" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📞 الدفاع المدني"
+          }
+        }
+      }
+    },
     "📞 Emergencies" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -22,8 +73,51 @@
         }
       }
     },
-    "911" : {
+    "📞 Kingdom Emergency (without SIM)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📞 طوارئ المملكة (بدون شريحة)"
+          }
+        }
+      }
+    },
+    "📞 Public Health & Community Services" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📞 الخدمات العامة والصحية والمجتمعية"
+          }
+        }
+      }
+    },
+    "📞 Road & Traffic Conditions" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📞 أحوال الطرق والمرور"
+          }
+        }
+      }
+    },
+    "112" : {
 
+    },
+    "211" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "211"
+          }
+        }
+      }
     },
     "a girl traveling illustration" : {
       "localizations" : {
