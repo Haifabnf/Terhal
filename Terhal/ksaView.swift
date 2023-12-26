@@ -24,111 +24,122 @@ struct ksaView: View {
             Color("60")
                 .ignoresSafeArea()
             
+            
             VStack{
                 
-                ZStack{
-                    Rectangle()
-                        .fill(Color("10"))
-                        .shadow(radius: 3)
-                        .edgesIgnoringSafeArea(.all)
-                        .frame(width: 400, height: 40)
+                VStack{
                     
-                    Text("")
-                        .navigationBarBackButtonHidden(true)
-                        .toolbar {
-                            ToolbarItem(placement: .navigationBarLeading) {
-                                Button {
-                                    dismiss()
-                                } label: {
-                                    HStack {
-                                        
-                                        Image(systemName: "chevron.backward")
-                                            .foregroundColor(.white)
-                                        Text("Countries")
-                                            .foregroundColor(.white)
+                    ZStack{
+                        Rectangle()
+                            .fill(Color("10"))
+                            .shadow(radius: 3)
+                            .edgesIgnoringSafeArea(.all)
+                            .frame(width: 400, height: 40)
+                        
+                        Text("")
+                            .navigationBarBackButtonHidden(true)
+                            .toolbar {
+                                ToolbarItem(placement: .navigationBarLeading) {
+                                    Button {
+                                        dismiss()
+                                    } label: {
+                                        HStack {
+                                            
+                                            Image(systemName: "chevron.backward")
+                                                .foregroundColor(.white)
+                                            Text("Countries")
+                                                .foregroundColor(.white)
+                                        }
                                     }
                                 }
                             }
-                        }
-                    
-                    
-                    Text("KSA")
-                        .foregroundColor(.white)
+                        
+                        
+                        Text("KSA")
+                            .foregroundColor(.white)
+                            .font(.custom("SF Arabic Rounded", size: 25))
+                            .fontWeight(.bold)
+                        
+                    }
+                }
+                
+                HStack{
+                    Text("Map")
+                        .accessibilityLabel("Map")
                         .font(.custom("SF Arabic Rounded", size: 25))
                         .fontWeight(.bold)
-                    
-                }
-                Spacer()
-            }
-            //ZStack{
-            VStack(){
-                
-                Text("Map")
-                    .accessibilityLabel("Map")
-                    .font(.custom("SF Arabic Rounded", size: 25))
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.leading)
+                        .multilineTextAlignment(.leading)
+                        .padding(.horizontal)
+
+                    Spacer()
+
+                }                        
                     .padding()
-                    .padding(.trailing, 290)
-                
+
                 
                 Map(coordinateRegion: $region)
                     .shadow(color: Color("shadow"), radius: 3, x: 2, y: 5)
                     .frame(width: 350, height: 300) 
-                    //.onAppear{
-                        //viewModel.checkIfLocationServicesIsEnabled()
-                    //}
+                    .onAppear{
+                        viewModel.checkIfLocationServicesIsEnabled()
+                    }
+                
                 
                 VStack{
-                    Text("Emergency contact numbers")
-                        .accessibilityLabel("Emergency contact numbers")
-                        .font(.custom("SF Arabic Rounded", size: 25))
-                        .fontWeight(.bold)
-                        .multilineTextAlignment(.leading)
-                        .padding()
-                        .padding(.trailing)
-                    
-                    VStack(spacing: 15){
-                        HStack{
-                            Text("📞 Emergencies")
-                                .font(.custom("SF Arabic Rounded", size: 17))
-                            Spacer()
-                            Text("911")
-                                .font(.custom("SF Arabic Rounded", size: 17))
-                                .foregroundColor(Color("10"))
-                        }
-                        
-                        HStack (spacing: 10){
-                            Text("📞 Ambulance")
-                                .font(.custom("SF Arabic Rounded", size: 17))
-                            Spacer()
-                            Text("997")
-                                .font(.custom("SF Arabic Rounded", size: 17))
-                                .foregroundColor(Color("10"))
-                        }
-                        
-                        HStack (spacing: 10){
-                            Text("📞 Civil Defense")
-                                .font(.custom("SF Arabic Rounded", size: 17))
-                            Spacer()
-                            Text("998")
-                                .font(.custom("SF Arabic Rounded", size: 17))
-                                .foregroundColor(Color("10"))
-                        }
-                        HStack (spacing: 10){
-                            Text("📞 Kingdom Emergency (without SIM)")
-                                .font(.custom("SF Arabic Rounded", size: 17))
-                            Spacer()
-                            Text("112")
-                                .font(.custom("SF Arabic Rounded", size: 17))
-                                .foregroundColor(Color("10"))
-                        }
+                    HStack{
+                        Text("Emergency contact numbers")
+                            .accessibilityLabel("Emergency contact numbers")
+                            .font(.custom("SF Arabic Rounded", size: 25))
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.leading)
+                            .padding()
+                        Spacer()
                     }
-                    .padding(.horizontal)
+                    ScrollView{
+                        
+                        VStack(spacing: 15){
+                            HStack{
+                                Text("📞 Emergencies")
+                                    .font(.custom("SF Arabic Rounded", size: 17))
+                                Spacer()
+                                Text("911")
+                                    .font(.custom("SF Arabic Rounded", size: 17))
+                                    .foregroundColor(Color("10"))
+                            }
+                            
+                            HStack (spacing: 10){
+                                Text("📞 Ambulance")
+                                    .font(.custom("SF Arabic Rounded", size: 17))
+                                Spacer()
+                                Text("997")
+                                    .font(.custom("SF Arabic Rounded", size: 17))
+                                    .foregroundColor(Color("10"))
+                            }
+                            
+                            HStack (spacing: 10){
+                                Text("📞 Civil Defense")
+                                    .font(.custom("SF Arabic Rounded", size: 17))
+                                Spacer()
+                                Text("998")
+                                    .font(.custom("SF Arabic Rounded", size: 17))
+                                    .foregroundColor(Color("10"))
+                            }
+                            HStack (spacing: 10){
+                                Text("📞 Kingdom Emergency (without SIM)")
+                                    .font(.custom("SF Arabic Rounded", size: 17))
+                                Spacer()
+                                Text("112")
+                                    .font(.custom("SF Arabic Rounded", size: 17))
+                                    .foregroundColor(Color("10"))
+                            }
+                        }
+                        .padding(.horizontal)
+                    }
                 }
+                .padding()
                 
                 
-                
+                Spacer()
             }
             
         }

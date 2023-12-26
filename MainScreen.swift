@@ -32,13 +32,13 @@ struct MainScreen: View {
                         Text("Choose the country you’re willing to go to and look through sketchy places to avoid, you can also find emergency contact numbers.")
                             //.accessibilityLabel("Choose the country you’re willing to go to and look through sketchy places to avoid, you can also find emergency contact numbers.")
                             .padding()
-                            .font(.custom("SF Arabic Rounded", size: 17))
+                            .font(.custom("SF-Arabic-Rounded", size: 17))
                     
                     GeometryReader { geometry in
 
                         Text("Choose a country")
                             .accessibilityLabel("Choose a country")
-                            .font(.custom("SF Arabic Rounded", size: 25))
+                            .font(.custom("SF-Arabic-Rounded", size: 25))
                             .fontWeight(.bold)
                             //.frame(height: 650)
                             .multilineTextAlignment(.leading)

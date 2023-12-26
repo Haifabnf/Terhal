@@ -99,6 +99,50 @@
         }
       }
     },
+    "📞 Saudi Embassy in DC" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📞 السفارة السعودية في واشنطن"
+          }
+        }
+      }
+    },
+    "📞 Saudi Embassy in LA" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📞 السفارة السعودية في لوس انجلس"
+          }
+        }
+      }
+    },
+    "📞 Saudi Embassy in NY" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📞 السفارة السعودية في نيويورك"
+          }
+        }
+      }
+    },
+    "📞 Saudi Embassy in TX" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📞 السفارة السعودية في تكساس"
+          }
+        }
+      }
+    },
     "112" : {
 
     },

@@ -14,6 +14,7 @@
 		A567002D2B31C22A008EBC50 /* TerhalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A567002C2B31C22A008EBC50 /* TerhalApp.swift */; };
 		A56700312B31C22B008EBC50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56700302B31C22B008EBC50 /* Assets.xcassets */; };
 		A56700342B31C22B008EBC50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56700332B31C22B008EBC50 /* Preview Assets.xcassets */; };
+		A59E49232B3B90880081EAA4 /* SF-Arabic-Rounded.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A59E49222B3B8F850081EAA4 /* SF-Arabic-Rounded.ttf */; };
 		B160BAD02B31DDC100DC5051 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160BACF2B31DDC100DC5051 /* SplashView.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		A567002C2B31C22A008EBC50 /* TerhalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerhalApp.swift; sourceTree = "<group>"; };
 		A56700302B31C22B008EBC50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A56700332B31C22B008EBC50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A59E49222B3B8F850081EAA4 /* SF-Arabic-Rounded.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Arabic-Rounded.ttf"; sourceTree = "<group>"; };
 		B160BACF2B31DDC100DC5051 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				A56700332B31C22B008EBC50 /* Preview Assets.xcassets */,
+				A59E49222B3B8F850081EAA4 /* SF-Arabic-Rounded.ttf */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A59E49232B3B90880081EAA4 /* SF-Arabic-Rounded.ttf in Resources */,
 				A56700342B31C22B008EBC50 /* Preview Assets.xcassets in Resources */,
 				A56700312B31C22B008EBC50 /* Assets.xcassets in Resources */,
 				A50AB7722B3ACE8C00936627 /* Localizable.xcstrings in Resources */,
