@@ -18,25 +18,24 @@ struct mapView: View {
         ZStack{
             Color("60")
                 .ignoresSafeArea()
-            VStack(spacing: 10){
+            VStack{
                 
-                
-                GeometryReader{ geometry in
+                ZStack{
+                    Rectangle()
+                        .fill(Color("10"))
+                        .shadow(radius: 3)
+                        .edgesIgnoringSafeArea(.all)
+                        .frame(width: 400, height: 40)
+                    
                     Text("")
                         .navigationBarBackButtonHidden(true)
-                        // 1
                         .toolbar {
-
-                            // 2
                             ToolbarItem(placement: .navigationBarLeading) {
-
                                 Button {
-                                    // action
                                     dismiss()
                                 } label: {
-                                    // 4
                                     HStack {
-
+                                        
                                         Image(systemName: "chevron.backward")
                                             .foregroundColor(.white)
                                         Text("Countries")
@@ -46,32 +45,28 @@ struct mapView: View {
                             }
                         }
                     
-                    Rectangle()
-                        .fill(Color("10"))
-                        .frame(width: geometry.size.width, height: geometry.size.height / 4.5)
-                        .position(x: geometry.size.width / 2, y: geometry.size.height * 0.06)
-                        .shadow(radius: 3)
-                        .edgesIgnoringSafeArea(.all)
-                        
+                    
                     Text("USA")
                         .foregroundColor(.white)
                         .font(.custom("SF Arabic Rounded", size: 25))
                         .fontWeight(.bold)
-                        .position(x: geometry.size.width / 2, y: geometry.size.height * -0.03)
                     
+                }
+                Spacer()
+            }
+            VStack(spacing: 0){
+                
                     Text("Map")
                         .accessibilityLabel("Map")
                         .font(.custom("SF Arabic Rounded", size: 25))
                         .fontWeight(.bold)
                         .multilineTextAlignment(.leading)
                         .padding()
-                        .position(x: geometry.size.width / 11, y: geometry.size.height / 8)
-                        .padding()
+                        .padding(.trailing, 290)
                     
-                            Map(coordinateRegion: $region)
-                                .shadow(color: Color("shadow"), radius: 3, x: 2, y: 5)
-                                .frame(width: geometry.size.width * 0.85, height: geometry.size.height / 2.8) // Adjust the size of the map here
-                                .position(x: geometry.size.width / 2, y: geometry.size.height / 2.8)
+                        Map(coordinateRegion: $region)
+                            .shadow(color: Color("shadow"), radius: 3, x: 2, y: 5)
+                            .frame(width: 350, height: 300)
                         
                     VStack(spacing: 10){
                         Text("Emergency contact numbers")
@@ -80,42 +75,46 @@ struct mapView: View {
                             .fontWeight(.bold)
                             .multilineTextAlignment(.leading)
                             .padding()
-                            .position(x: geometry.size.width * 0.44, y: geometry.size.height / 1.8)
-                            .padding()
-                        
+                            .padding(.trailing, 90)
+
+                            
+                            
                         VStack(spacing: 15){
                             HStack (spacing: 10){
                                 Text("📞 Emergencies")
                                     .font(.custom("SF Arabic Rounded", size: 17))
-                                Text("      911")
+                                Spacer()
+                                Text("911")
                                     .font(.custom("SF Arabic Rounded", size: 17))
                                     .foregroundColor(Color("10"))
-                                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                                    
                             }
-                            //.position(x: geometry.size.width / 1.7, y: geometry.size.height / 7.5)
                             HStack (spacing: 10){
                                 Text("📞 Public Health & Community Services")
                                     .font(.custom("SF Arabic Rounded", size: 17))
+                                Spacer()
+
                                 Text("211")
                                     .font(.custom("SF Arabic Rounded", size: 17))
                                     .foregroundColor(Color("10"))
-                                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                             }
                             
                             HStack (spacing: 10){
                                 Text("📞 Road & Traffic Conditions")
                                     .font(.custom("SF Arabic Rounded", size: 17))
-                                Text("     511")
+                                Spacer()
+
+                                Text("511")
                                     .font(.custom("SF Arabic Rounded", size: 17))
                                     .foregroundColor(Color("10"))
-                                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                             }
                         }
-                        .position(x: geometry.size.width / 1.7, y: geometry.size.height / 4.8)
+                        .padding(.horizontal)
+                       
                     }
                     
                     
-                }
+                
             }
         }
     }

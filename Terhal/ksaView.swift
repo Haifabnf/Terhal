@@ -29,12 +29,9 @@ struct ksaView: View {
                 ZStack{
                     Rectangle()
                         .fill(Color("10"))
-                    //.frame(width: geometry.size.width, height: geometry.size.height / 4.5)
-                    //.position(x: geometry.size.width / 2, y: geometry.size.height * 0.095)
                         .shadow(radius: 3)
                         .edgesIgnoringSafeArea(.all)
                         .frame(width: 400, height: 40)
-                    //.position(x: 200, y: -50)
                     
                     Text("")
                         .navigationBarBackButtonHidden(true)
@@ -59,17 +56,12 @@ struct ksaView: View {
                         .foregroundColor(.white)
                         .font(.custom("SF Arabic Rounded", size: 25))
                         .fontWeight(.bold)
-                    //.position(x: 200, y: -15)
                     
-                    //.position(x: geometry.size.width / 2, y: geometry.size.height * -0.04)
                 }
                 Spacer()
             }
             //ZStack{
             VStack(){
-                
-                //GeometryReader{ geometry in
-                
                 
                 Text("Map")
                     .accessibilityLabel("Map")
@@ -77,18 +69,17 @@ struct ksaView: View {
                     .fontWeight(.bold)
                     .multilineTextAlignment(.leading)
                     .padding()
-                    .padding(.trailing, 300)
+                    .padding(.trailing, 290)
                 
                 
                 Map(coordinateRegion: $region)
                     .shadow(color: Color("shadow"), radius: 3, x: 2, y: 5)
-                    .frame(width: 350, height: 300) // Adjust the size of the map here
-                //.position(x: geometry.size.width / 2, y: geometry.size.height / 2)
-                    .onAppear{
-                        viewModel.checkIfLocationServicesIsEnabled()
-                    }
+                    .frame(width: 350, height: 300) 
+                    //.onAppear{
+                        //viewModel.checkIfLocationServicesIsEnabled()
+                    //}
                 
-                VStack(spacing: 0){
+                VStack{
                     Text("Emergency contact numbers")
                         .accessibilityLabel("Emergency contact numbers")
                         .font(.custom("SF Arabic Rounded", size: 25))
