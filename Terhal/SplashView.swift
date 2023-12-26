@@ -5,7 +5,7 @@ struct SplashView: View {
     @State var isActive: Bool = false
 
     var body: some View {
-        NavigationStack{
+        NavigationView{
             if self.isActive{
                 MainScreen()
             }else{

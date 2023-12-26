@@ -11,7 +11,6 @@
 		A50AB76C2B3AC9A900936627 /* ksaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50AB76B2B3AC9A900936627 /* ksaView.swift */; };
 		A50AB76E2B3AC9B300936627 /* mapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50AB76D2B3AC9B300936627 /* mapView.swift */; };
 		A567002D2B31C22A008EBC50 /* TerhalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A567002C2B31C22A008EBC50 /* TerhalApp.swift */; };
-		A567002F2B31C22A008EBC50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A567002E2B31C22A008EBC50 /* ContentView.swift */; };
 		A56700312B31C22B008EBC50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56700302B31C22B008EBC50 /* Assets.xcassets */; };
 		A56700342B31C22B008EBC50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56700332B31C22B008EBC50 /* Preview Assets.xcassets */; };
 		B160BAD02B31DDC100DC5051 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160BACF2B31DDC100DC5051 /* SplashView.swift */; };
@@ -23,7 +22,6 @@
 		A50AB76D2B3AC9B300936627 /* mapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapView.swift; sourceTree = "<group>"; };
 		A56700292B31C22A008EBC50 /* Terhal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Terhal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A567002C2B31C22A008EBC50 /* TerhalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerhalApp.swift; sourceTree = "<group>"; };
-		A567002E2B31C22A008EBC50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A56700302B31C22B008EBC50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A56700332B31C22B008EBC50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B160BACF2B31DDC100DC5051 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 				A567002C2B31C22A008EBC50 /* TerhalApp.swift */,
 				B160BACF2B31DDC100DC5051 /* SplashView.swift */,
 				A50AB7692B3AC98100936627 /* MainScreen.swift */,
-				A567002E2B31C22A008EBC50 /* ContentView.swift */,
 				A50AB76B2B3AC9A900936627 /* ksaView.swift */,
 				A50AB76D2B3AC9B300936627 /* mapView.swift */,
 				A56700302B31C22B008EBC50 /* Assets.xcassets */,
@@ -150,7 +147,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A50AB76A2B3AC98100936627 /* MainScreen.swift in Sources */,
-				A567002F2B31C22A008EBC50 /* ContentView.swift in Sources */,
 				B160BAD02B31DDC100DC5051 /* SplashView.swift in Sources */,
 				A567002D2B31C22A008EBC50 /* TerhalApp.swift in Sources */,
 				A50AB76C2B3AC9A900936627 /* ksaView.swift in Sources */,
