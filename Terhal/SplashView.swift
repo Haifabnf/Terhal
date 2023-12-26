@@ -5,27 +5,29 @@ struct SplashView: View {
     @State var isActive: Bool = false
 
     var body: some View {
-        if self.isActive{
-            ContentView()
-        }else{
-            ZStack {
-                // Image as the background
-                Image("terh")
-                    .resizable()
+        NavigationStack{
+            if self.isActive{
+                MainScreen()
+            }else{
+                ZStack {
+                    // Image as the background
+                    Image("terh")
+                        .resizable()
                     //.aspectRatio(contentMode: .fill)
-                    .edgesIgnoringSafeArea(.all)
-                    .opacity(imageOpacity)
+                        .edgesIgnoringSafeArea(.all)
+                        .opacity(imageOpacity)
                     //.animation(.easeInOut(duration: 1.5)) // Adjust the duration as needed
-                
-                
-                
-            }
-            .onAppear {
-                
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-                    withAnimation {
-                        //self.imageOpacity = 0.0
-                        self.isActive = true
+                    
+                    
+                    
+                }
+                .onAppear {
+                    
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                        withAnimation {
+                            //self.imageOpacity = 0.0
+                            self.isActive = true
+                        }
                     }
                 }
             }
