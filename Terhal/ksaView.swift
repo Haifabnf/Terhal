@@ -66,21 +66,15 @@ struct ksaView: View {
                         .position(x: geometry.size.width / 11, y: geometry.size.height / 8)
                         .padding()
                     
-                    RoundedRectangle(cornerRadius: 25)
-                        .fill(.white)
-                        .padding()
-                        //.frame(width: 350, height: 300)
-                        .frame(width: geometry.size.width * 0.9, height: geometry.size.height / 2.6) // Adjust the size here
-                        .position(x: geometry.size.width / 2, y: geometry.size.height / 2.8)
-                        .overlay{
+                    
                             Map(coordinateRegion: $region)
                                 .frame(width: geometry.size.width * 0.85, height: geometry.size.height / 2.8) // Adjust the size of the map here
                                 .position(x: geometry.size.width / 2, y: geometry.size.height / 2.8)
                                 .onAppear{
                                     viewModel.checkIfLocationServicesIsEnabled()
                                 }
-                        }
-                        .clipShape(RoundedRectangle(cornerRadius: 25))
+                        
+                        //.clipShape(RoundedRectangle(cornerRadius: 25))
                 }
             }
         }
