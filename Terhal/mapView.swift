@@ -15,6 +15,7 @@ struct mapView: View {
                                                    span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
     
     var body: some View {
+        
         ZStack{
             Color("60")
                 .ignoresSafeArea()
@@ -29,7 +30,8 @@ struct mapView: View {
                                 .fill(Color("10"))
                                 .shadow(radius: 3)
                                 .edgesIgnoringSafeArea(.all)
-                                .frame(width: 400, height: 40)
+                                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                                .frame(height: 40)
                             
                             Text("")
                                 .navigationBarBackButtonHidden(true)
@@ -59,14 +61,15 @@ struct mapView: View {
                         //Spacer()
                         
                     }
-                    Text("Map")
-                        .accessibilityLabel("Map")
-                        .font(.custom("SF Arabic Rounded", size: 25))
-                        .fontWeight(.bold)
-                        .multilineTextAlignment(.leading)
-                        .padding()
-                        .padding(.trailing, 290)
-                    
+                    HStack{
+                        Text("Map")
+                            .accessibilityLabel("Map")
+                            .font(.custom("SF Arabic Rounded", size: 25))
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.leading)
+                            .padding()
+                        Spacer()
+                    }
                     Map(coordinateRegion: $region)
                         .shadow(color: Color("shadow"), radius: 3, x: 2, y: 5)
                         .frame(width: 350, height: 300)

@@ -33,6 +33,46 @@
         }
       }
     },
+    "+202 752 2740" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+202 752 2740"
+          }
+        }
+      }
+    },
+    "+212 342 3800" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+212 342 3800"
+          }
+        }
+      }
+    },
+    "+310 479 6000" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+310 479 6000"
+          }
+        }
+      }
+    },
+    "+713 785 5577" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+713 785 5577"
+          }
+        }
+      }
+    },
     "📞 Ambulance" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -144,7 +184,14 @@
       }
     },
     "112" : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "112"
+          }
+        }
+      }
     },
     "211" : {
       "localizations" : {
@@ -157,16 +204,44 @@
       }
     },
     "511" : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "511"
+          }
+        }
+      }
     },
     "911" : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "911"
+          }
+        }
+      }
     },
     "997" : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "997"
+          }
+        }
+      }
     },
     "998" : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "998"
+          }
+        }
+      }
     },
     "a girl traveling illustration" : {
       "localizations" : {
@@ -309,6 +384,9 @@
           }
         }
       }
+    },
+    "رسمة لامرأة تسافر" : {
+
     }
   },
   "version" : "1.0"

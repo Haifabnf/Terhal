@@ -34,7 +34,8 @@ struct ksaView: View {
                             .fill(Color("10"))
                             .shadow(radius: 3)
                             .edgesIgnoringSafeArea(.all)
-                            .frame(width: 400, height: 40)
+                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                            .frame(height: 40)
                         
                         Text("")
                             .navigationBarBackButtonHidden(true)

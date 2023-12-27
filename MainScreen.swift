@@ -14,7 +14,10 @@ struct MainScreen: View {
 
     var text: String = "Choose the country you’re willing to go to and look through sketchy places to avoid, you can also find emergency contact numbers."
     
+    
+    
     var body: some View {
+
         NavigationView {
             ZStack{
                 
@@ -23,11 +26,13 @@ struct MainScreen: View {
                 
                 VStack(spacing: 0){
                     //GeometryReader { geometry in
+                        
                         Image("Image")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .padding()
                             .accessibilityLabel("a girl traveling illustration")
+                    
                         
                         Text("Choose the country you’re willing to go to and look through sketchy places to avoid, you can also find emergency contact numbers.")
                             //.accessibilityLabel("Choose the country you’re willing to go to and look through sketchy places to avoid, you can also find emergency contact numbers.")
